@@ -13,19 +13,17 @@ body{
     box-sizing: border-box;
 }
 
-#todo-table form:after{
-    margin: 0;
-    content: '';
-    display: block;
-    clear: both;
+#todo-table form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 input[type="text"]{
-    width: 70%;
+    width: calc(70% - 5px);
     padding: 20px;
     background:#181c22;
     border: 0;
-    float: left;
     font-size: 20px;
     color: #989898;
 }
@@ -33,7 +31,6 @@ input[type="text"]{
 button{
     padding: 20px;
     width: 30%;
-    float: left;
     background: #23282e;
     border: 0;
     box-sizing: border-box;
@@ -64,7 +61,7 @@ li:hover{
 }
 
 h1{
-    background: url(/logo.png) no-repeat center;
+    background: url(/assets/logo.png) no-repeat center;
     margin-bottom: 0;
     text-indent: -10000px;
 }
